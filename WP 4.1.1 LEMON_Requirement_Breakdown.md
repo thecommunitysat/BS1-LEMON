@@ -1,6 +1,6 @@
 # LEMON Requirement Breakdown
-### Community Satellite Project  | BATSAT
-PAYLOAD.LEMON.REQ.001
+Part of WP 4.1.1 LEMON Sensor choice
+The LEMON package consists of sensors that measure the following quantities: temperature, luminous flux, radiation and magnetic flux density.
 
 *All values are target values and are subject to further change depending on part availability and system robustness
 
@@ -10,7 +10,7 @@ The TMS will consist of two sensors, one for measuring the internal temperature 
 
 . | Desc. | Value | Notes
 --|--|--|--
-TMS.1 | Temperature Range | -25°C - 80°C Internal, -85°C-100°C External | 
+TMS.1 | Temperature Range | -25°C - +80°C Internal, -85°C - +100°C External | 
 TMS.2 | Resolution | 0.045 °C | Ext. Range/4096 (for a 12-bit system with maximum range of -85°C-100°C)
 TMS.3 | Bit Depth | 12 Bit | 
 TMS.4 | Accuracy | ±0.5 °C | Somewhat arbitrary value well within the range of PTD capabilities.
@@ -39,7 +39,7 @@ LUM.7 | Data Rate | 18B/min | 1 meas. Per 30 sec.
 
 . | Desc. | Value | Notes
 --|--|--|--
-RAD.1 | Range | 4-40 Krad/yr | 
+RAD.1 | Range | 4-40 krad/yr | 
 RAD.2 | Resolution | 10 rad | Depends on type
 RAD.3 | Channels | 1 | 
 
@@ -53,7 +53,7 @@ RAD.3 | Channels | 1 |
 MAG.1 | Range | 30μT-60μT | 
 MAG.2 | Resolution | 7nT | Range/4096
 MAG.3 | Bit Depth | 12 bit | 
-MAG.4 | Accuracy | ±1nT | 
+MAG.4 | Accuracy | ±1nT | A resolution of 7nT results in an accuracy of at best ±3.5nT
 MAG.5 | Channels | 1 | 
 MAG.6 | Measurement Size | 12b (1.5B) | 12 bit
 MAG.7 | Data Rate | 3 B/min | 1 meas. Per 30 sec.
